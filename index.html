@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Xiaoteng Zhou</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      border-bottom: 1px solid #eee;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    nav .name {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #0077b6;
+    }
+
+    .hero {
+      min-height: 72vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+      background: #f5f8fa;
+    }
+
+    .hero h1 {
+      font-size: 54px;
+      margin: 0 0 10px;
+      font-weight: 650;
+    }
+
+    .hero h2 {
+      font-size: 25px;
+      font-weight: 400;
+      color: #555;
+      margin: 0 0 16px;
+    }
+
+    .hero p {
+      color: #666;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 6px;
+      padding: 10px 22px;
+      border: 1px solid #0077b6;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #0077b6;
+    }
+
+    .buttons a:hover {
+      background: #0077b6;
+      color: white;
+    }
+
+    section {
+      max-width: 950px;
+      margin: auto;
+      padding: 75px 24px;
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 28px;
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #e5e5e5;
+      border-radius: 9px;
+      padding: 25px;
+      background: #fff;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .publication {
+      margin-bottom: 25px;
+    }
+
+    .publication-title {
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      border-top: 1px solid #eee;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav .links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="name">Xiaoteng Zhou</div>
+
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<div class="hero">
+  <div>
+    <h1>Xiaoteng Zhou</h1>
+
+    <h2>
+      Underwater Robotics · Acoustic Perception · Imaging Sonar
+    </h2>
+
+    <p>
+      Project Researcher · The University of Tokyo
+    </p>
+
+    <div class="buttons">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#">CV</a>
+    </div>
+  </div>
+</div>
+
+
+<section id="about">
+  <h2>About Me</h2>
+
+  <p>
+    Welcome to my personal academic website.
+    My research focuses on underwater robotic perception,
+    imaging sonar, acoustic sensing, and intelligent systems
+    for challenging marine environments.
+  </p>
+</section>
+
+
+<section id="research">
+  <h2>Research</h2>
+
+  <div class="research-grid">
+
+    <div class="card">
+      <h3>Imaging Sonar</h3>
+      <p>
+        Sonar imaging, enhancement, restoration,
+        and underwater acoustic perception.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Underwater Robotics</h3>
+      <p>
+        Localization, navigation, mapping,
+        tracking, and autonomous underwater systems.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>AI for Marine Perception</h3>
+      <p>
+        Deep learning and intelligent perception
+        for complex underwater environments.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="publications">
+
+  <h2>Selected Publications</h2>
+
+  <div class="publication">
+    <div class="publication-title">
+      Publication Title
+    </div>
+    Xiaoteng Zhou, Coauthor, Coauthor<br>
+    Journal / Conference, 2026
+  </div>
+
+  <div class="publication">
+    <div class="publication-title">
+      Publication Title
+    </div>
+    Xiaoteng Zhou, Coauthor, Coauthor<br>
+    Journal / Conference, 2025
+  </div>
+
+</section>
+
+
+<section id="contact">
+
+  <h2>Contact</h2>
+
+  <p>
+    Email: your-email@domain.com
+  </p>
+
+  <p>
+    Google Scholar · GitHub · LinkedIn
+  </p>
+
+</section>
+
+
+<footer>
+  © 2026 Xiaoteng Zhou
+</footer>
+
+</body>
+</html>
